@@ -1,0 +1,7 @@
+{
+  "name": "skemapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
