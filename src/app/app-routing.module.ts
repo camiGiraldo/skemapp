@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
@@ -24,9 +24,37 @@ const routes: Routes = [
     loadChildren: () => import('./forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
   },
   {
-    path: 'dashboard',
-    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
+    path: 'terms-conditions',
+    loadChildren: () => import('./terms-conditions/terms-conditions.module').then( m => m.TermsConditionsPageModule)
   },
+  {
+    path: 'purchasing-stages',
+    loadChildren: () => import('./purchasing-stages/purchasing-stages.module').then( m => m.PurchasingStagesPageModule)
+  },
+  {
+    path: 'payment-plan',
+    loadChildren: () => import('./payment-plan/payment-plan.module').then( m => m.PaymentPlanPageModule)
+  },
+  {
+    path: 'summary-transactions',
+    loadChildren: () => import('./summary-transactions/summary-transactions.module').then( m => m.SummaryTransactionsPageModule)
+  },
+  {
+    path: 'cash-receipt',
+    loadChildren: () => import('./cash-receipt/cash-receipt.module').then( m => m.CashReceiptPageModule)
+  },
+  {
+    path: 'peace-certificate',
+    loadChildren: () => import('./peace-certificate/peace-certificate.module').then( m => m.PeaceCertificatePageModule)
+  },
+  {
+    path: 'requests',
+    loadChildren: () => import('./requests/requests.module').then( m => m.RequestsPageModule)
+  },
+  {
+    path: 'rate-us',
+    loadChildren: () => import('./rate-us/rate-us.module').then( m => m.RateUsPageModule)
+  }
 ];
 
 @NgModule({

@@ -1,26 +1,78 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button>Atras</ion-back-button>
-    </ion-buttons>
-    <ion-title>Iniciar sesión</ion-title>
-  </ion-toolbar>
-</ion-header>
-<ion-content>
-  <form>
-    <ion-item lines="full">
-      <ion-label position="floating">Correo</ion-label>
-      <ion-input type="text" required></ion-input>
-    </ion-item>
-    <ion-item lines="full">
-      <ion-label position="floating">Contraseña</ion-label>
-      <ion-input type="password" required></ion-input>
-    </ion-item>
-    <ion-row>
-      <ion-col>
-        <ion-button type="submit" color="danger" expand="block" [routerLink]="['/dashboard']">Iniciar sesión</ion-button>
-        <a [routerLink]="['/forgot-password']" class="small-text">Recordar contraseña?</a>
-      </ion-col>
-    </ion-row>
-  </form>
+<ion-content padding class="animated fadeIn login auth-page">
+  <div class="theme-bg"></div>
+  <div class="auth-content">
+
+    <!-- Logo -->
+    <div padding-horizontal text-center class="animated fadeInDown text-center">
+      <h4 no-margin>
+        <ion-text color="light text-center" class="fw700">
+          Iniciar Sesión
+        </ion-text>
+      </h4>
+      <div class="logo">
+        <img src="../../assets/img/logo.jpg" alt="">
+        <img src="../../assets/img/logo_color.png" alt="">
+      </div>
+
+    </div>
+
+    <!-- Login form -->
+    <form [formGroup]="loginForm" class="list-form">
+      <ion-item no-padding class="animated fadeInUp">
+        <ion-label position="floating">
+          <ion-icon name="mail-outline" item-start></ion-icon>
+          Usuario
+        </ion-label>
+        <ion-input color="secondary" type="email" formControlName="email"></ion-input>
+      </ion-item>
+      <!-- <p ion-text class="text08" *ngIf="onLoginForm.get('email').touched && onLoginForm.get('email').hasError('required')">
+        <ion-text color="warning">
+          Required Field
+        </ion-text>
+      </p>-->
+
+
+      <ion-item no-padding class="animated fadeInUp">
+        <ion-label position="floating">
+          <ion-icon name="lock-closed-outline" item-start></ion-icon>
+          Contraseña
+        </ion-label>
+        <ion-input color="secondary" type="password" formControlName="password"></ion-input>
+      </ion-item>
+      <!--<p ion-text color="warning" class="text08" *ngIf="onLoginForm.get('password').touched && onLoginForm.get('password').hasError('required')">
+        <ion-text color="warning">
+          Required Field
+        </ion-text>
+        </p>-->
+
+    </form>
+
+    <div>
+      <ion-button icon-left size="medium" expand="full" shape="round" color="primary" (click)="login()" tappable>
+        Iniciar sesión
+      </ion-button>
+    </div>
+
+
+    <p text-right tappableclass="paz" class="text-center">
+      <ion-text color="light">
+        <strong> O </strong>
+      </ion-text>
+    </p>
+
+    <!-- Other links -->
+    <div>
+      <ion-button icon-left size="medium" expand="full" shape="round" color="secondary" (click)="login()" tappable>
+        Registrate
+      </ion-button>
+    </div>
+
+    <p text-right tappable (click)="forgotPass()" class="paz text-center">
+      <ion-text color="light" class="text-underline">
+        <ion-icon name="checkmark-outline"></ion-icon>
+        Recuperar contraseña
+      </ion-text>
+    </p>
+
+  </div>
 </ion-content>
