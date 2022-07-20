@@ -1,18 +1,86 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      SkemApp
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-<ion-content class="auth-form">
-  <ion-grid>
+<ion-content padding class="animated fadeIn home-page">
+
+  <div padding-horizontal text-center class="animated fadeInDown text-center paz">
+    <h4 no-margin>
+      <ion-text color="light text-center" class="fw700">
+        Hola!, Daniel
+      </ion-text>
+    </h4>
+    <span>
+      Selecciona la opcion que desees realizar
+    </span>
+  </div>
+  <ion-grid class="menu-grid">
     <ion-row>
       <ion-col align-self-center>
-        <ion-button [routerLink]="['/registration']" expand="block" color="primary">Registrate</ion-button>
-        <span class="divider line one-line">o</span>
-        <span class="already">Inicia sesión</span>
-        <ion-button [routerLink]="['/login']" expand="block" color="danger">Iniciar sesión</ion-button>
+        <div class="block-menu blue-1">
+          <ion-icon name="analytics-outline"></ion-icon>
+          <span>
+            Etapas de tu compra
+          </span>
+        </div>
+      </ion-col>
+      <ion-col align-self-center>
+        <div class="block-menu green-1">
+          <ion-icon name="cash-outline"></ion-icon>
+          <span>
+            Plan de pagos
+          </span>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col align-self-center>
+        <div class="block-menu orange-1">
+          <ion-icon name="document-text-outline"></ion-icon>
+          <span>
+            Resumen de movimientos
+          </span>
+        </div>
+      </ion-col>
+      <ion-col align-self-center>
+        <div class="block-menu blue-2">
+          <ion-icon name="archive-outline"></ion-icon>
+          <span>
+            Recibo de caja
+          </span>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col align-self-center>
+        <div class="block-menu orange-3">
+          <ion-icon name="ribbon-outline"></ion-icon>
+          <span>
+            Paz y salvo
+          </span>
+        </div>
+      </ion-col>
+      <ion-col align-self-center>
+        <div class="block-menu grey-1">
+          <ion-icon name="business-outline"></ion-icon>
+          <span>
+            Obras y avances
+          </span>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col align-self-center>
+        <div class="block-menu blue-3">
+          <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+          <span>
+            Solicitudes
+          </span>
+        </div>
+      </ion-col>
+      <ion-col align-self-center>
+        <div class="block-menu orange-2">
+          <ion-icon name="star-half-outline"></ion-icon>
+          <span>
+            Calificanos
+          </span>
+        </div>
       </ion-col>
     </ion-row>
   </ion-grid>
