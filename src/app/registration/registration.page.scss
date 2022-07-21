@@ -1,0 +1,40 @@
+:host {
+  ion-content {
+      --background: linear-gradient(135deg, var(--ion-color-dark), var(--ion-color-primary));
+  }
+}
+
+.registration-page {
+
+  .info {
+    color: #FFF;
+  }
+
+  .form-registration {
+    padding: 5px 7px 0px 7px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #fff;
+
+    ion-list {
+      background: none;
+
+      ion-select {
+        color: #FFF;
+      }
+    }
+
+    ion-item {
+      background: none;
+      padding: 0;
+
+      ion-label {
+        color: var(--ion-color-light);
+      }
+
+      ion-input {
+        color: var(--ion-color-light);
+      }
+    }
+  }
+}

@@ -3,17 +3,32 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>Register</ion-title>
+    <ion-title >Registrate</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content>
-  <form>
+<ion-content class="registration-page">
+  <p class="info text-center">Por favor registra los siguientes campos:</p>
+  <form class="form-registration">
     <ion-item lines="full">
       <ion-label position="floating">Nombres:</ion-label>
       <ion-input type="text" required></ion-input>
     </ion-item>
     <ion-item lines="full">
       <ion-label position="floating">Apellidos:</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-list>
+      <ion-item lines="full">
+        <ion-label position="floating">Tipo de documento:</ion-label>
+        <ion-select>
+          <ion-select-option value="CC">Cedula de ciudadania</ion-select-option>
+          <ion-select-option value="PAP">Pasaporte</ion-select-option>
+          <ion-select-option value="CE">Cedula de extrangeria</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <ion-item lines="full">
+      <ion-label position="floating">Numero de documento</ion-label>
       <ion-input type="text" required></ion-input>
     </ion-item>
     <ion-item lines="full">
@@ -26,7 +41,7 @@
     </ion-item>
     <ion-row>
       <ion-col>
-        <ion-button type="submit" color="danger" expand="block">Enviar</ion-button>
+        <ion-button color="primary" expand="block">Enviar</ion-button>
       </ion-col>
     </ion-row>
   </form>
