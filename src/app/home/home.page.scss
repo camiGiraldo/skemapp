@@ -17,10 +17,8 @@
     );
 
   }
-
-
-
 }
+
 .paz {
   position: relative;
   z-index: 10;
@@ -30,6 +28,10 @@
 }
 
 .home-page {
+
+  span {
+    color: #FFF;
+  }
 
   .menu-grid {
     height: 100%;
