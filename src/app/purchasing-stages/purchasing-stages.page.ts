@@ -9,7 +9,6 @@ export class PurchasingStagesPage implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit(): void {}
 
 }

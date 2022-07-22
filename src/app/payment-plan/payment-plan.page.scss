@@ -1,0 +1,17 @@
+:host {
+  ion-content {
+      --background: linear-gradient(135deg, var(--ion-color-dark), var(--ion-color-primary));
+  }
+
+  ion-list {
+    background: none;
+  }
+}
+
+.paymentplan-page {
+  .info {
+    color: white;
+    padding: 10px;
+    margin: 0;
+  }
+}
