@@ -21,5 +21,9 @@ export class HomePage implements OnInit{
     this.router.navigate(['payment-plan']);
   }
 
+  openCashReceipt(){
+    this.router.navigate(['cash-receipt']);
+  }
+
 
 }
